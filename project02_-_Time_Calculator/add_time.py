@@ -60,5 +60,9 @@ def add_time(start, duration, day=None):
   elif n_days < 1:
     new_time = f'{hour:.0f}:{minute:02.0f} {clock}' + weekday
 
-  
+  print(new_time)
+
   return new_time
+
+if __name__ == '__main__':
+    add_time('10:25 AM', '150:10')
