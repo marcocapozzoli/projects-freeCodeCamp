@@ -1,5 +1,3 @@
-import numpy as np
-
 class Category:
   
     def __init__(self, category):
@@ -20,7 +18,8 @@ class Category:
             return False
         else:    
             self.ledger.append({
-                "amount": -amount, "description": description
+                "amount": -amount,
+                "description": description
             })
             self.balance -= amount
             return True
