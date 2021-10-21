@@ -6,6 +6,26 @@ class Category:
         self.balance = 0
         self.expenses = 0
 
+    # def __repr__(self):
+    #     title = str(self.category).center(30, "*")
+    #     text = title + "\n"
+    #     total = 0
+        
+    #     for i in range(len(self.ledger)):
+    #         description = self.ledger[i]['description']
+    #         amount = self.ledger[i]['amount']
+    #         amount_str = '{:.2f}'.format(amount)
+            
+    #         left = description[0:23]
+    #         right = amount_str.rjust(30-len(left))
+    #         text += left + right + "\n"
+    #         total += amount
+        
+    #     total = "Total: {:.2f}".format(total)
+    #     text += total
+        
+    #     return text
+    
     def deposit(self, amount, description=""):
         self.ledger.append({
             "amount": amount,
@@ -40,4 +60,3 @@ class Category:
             return False
         else:
             return True
-        
